@@ -7,12 +7,12 @@
             #region Q1: What is a generic class? Why use generics?
             /*
              * Generic Class: هو كلاس يتم تعريفه باستخدام معاملات نوع (Type Parameters) مثل <T>،
-             * مما يسمح له بالعمل مع أي نوع بيانات دون تحديد النوع مسبقاً[cite: 5].
+             * مما يسمح له بالعمل مع أي نوع بيانات دون تحديد النوع مسبقاً.
              * 
              * Why use Generics?
-             * 1. Type Safety: اكتشاف الأخطاء وقت بناء الكود (Compile-time) بدلاً من وقت التشغيل[cite: 5].
-             * 2. Performance: تحسين الأداء عبر تجنب عمليات التحويل المكلفة (Boxing & Unboxing)[cite: 5].
-             * 3. Reusability: إعادة استخدام نفس الكود مع أنواع بيانات مختلفة دون تكراره[cite: 5].
+             * 1. Type Safety: اكتشاف الأخطاء وقت بناء الكود (Compile-time) بدلاً من وقت التشغيل.
+             * 2. Performance: تحسين الأداء عبر تجنب عمليات التحويل المكلفة (Boxing & Unboxing).
+             * 3. Reusability: إعادة استخدام نفس الكود مع أنواع بيانات مختلفة دون تكراره.
              */
             #endregion
 
@@ -36,7 +36,7 @@
             #region Q3: What are multiple type parameters? Write Pair<TKey, TValue>.
             /*
              * Multiple Type Parameters: تعني قدرة الكلاس أو الواجهة أو الدالة على استقبال أكثر من 
-             * نوع بيانات واحد في نفس الوقت (مثل T1, T2) ليتم استخدامهم داخلياً[cite: 5].
+             * نوع بيانات واحد في نفس الوقت (مثل T1, T2) ليتم استخدامهم داخلياً.
              */
             // public class Pair<TKey, TValue>
             //  {
@@ -54,7 +54,7 @@
             #region Q4: What is a generic method? Write Swap<T> method.
             /*
              * Generic Method: هي دالة تستقبل نوع بيانات (Type Parameter) خاص بها، 
-             * وتعمل عليه بغض النظر عما إذا كان الكلاس الذي يحتويها Generic أم لا[cite: 5].
+             * وتعمل عليه بغض النظر عما إذا كان الكلاس الذي يحتويها Generic أم لا.
              */
             //public class Utility
             //    {
@@ -91,7 +91,7 @@
             #region Q6: What is a generic interface? Write IRepository<T>.
             /*
              * Generic Interface: واجهة برمجية تحدد مجموعة من الدوال والمعاملات بدون تحديد نوع البيانات،
-             * ليتم تحديده لاحقاً عند الـ Implementation بواسطة الكلاس المستقبل[cite: 6].
+             * ليتم تحديده لاحقاً عند الـ Implementation بواسطة الكلاس المستقبل.
              */
             //public interface IRepository<T>
             //    {
@@ -102,7 +102,7 @@
 
             #region Q7: What is the 'struct' constraint? Write an example.
             /*
-             * 'struct' constraint: قيد يفرض أن يكون نوع البيانات الممرر Value Type فقط (مثل int, double, struct)[cite: 6].
+             * 'struct' constraint: قيد يفرض أن يكون نوع البيانات الممرر Value Type فقط (مثل int, double, struct).
              */
             //public class StructContainer<T> where T : struct
             //    {
@@ -112,7 +112,7 @@
 
             #region Q8: What is the 'class' constraint? Write an example.
             /*
-             * 'class' constraint: قيد يفرض أن يكون نوع البيانات الممرر Reference Type فقط (مثل class, interface, delegate, string)[cite: 6].
+             * 'class' constraint: قيد يفرض أن يكون نوع البيانات الممرر Reference Type فقط (مثل class, interface, delegate, string).
              */
             //public class ReferenceContainer<T> where T : class
             //    {
@@ -123,7 +123,7 @@
             #region Q9: What is the 'new()' constraint? Write an example.
             /*
              * 'new()' constraint: قيد يفرض أن يحتوي النوع الممرر على Parameterless Constructor،
-             * مما يسمح بإنشاء نسخة جديدة من النوع داخل الكلاس باستخدام new T()[cite: 6].
+             * مما يسمح بإنشاء نسخة جديدة من النوع داخل الكلاس باستخدام new T().
              */
             //public class Creator<T> where T : new()
             //    {
@@ -136,7 +136,7 @@
 
             #region Q10: What is the interface constraint? Write an example.
             /*
-             * Interface constraint: قيد يشترط أن يكون النوع الممرر يطبق (Implements) واجهة برمجية محددة[cite: 6].
+             * Interface constraint: قيد يشترط أن يكون النوع الممرر يطبق (Implements) واجهة برمجية محددة.
              */
             //public class Processor<T> where T : IDisposable
             //    {
@@ -149,7 +149,7 @@
 
             #region Q11: What is the base class constraint? Write an example.
             /*
-             * Base class constraint: قيد يشترط أن يكون النوع الممرر إما الكلاس الأساسي نفسه أو يرث منه[cite: 6].
+             * Base class constraint: قيد يشترط أن يكون النوع الممرر إما الكلاس الأساسي نفسه أو يرث منه.
              */
             //public class Entity { public int Id { get; set; } }
 
@@ -165,7 +165,7 @@
             #region Q12: How do you apply multiple constraints? Write an example.
             /*
              * Multiple Constraints: يتم تطبيق أكثر من قيد بيفصل بينهم بفاصلة (,) مع مراعاة الترتيب
-             * (الـ class أو struct يوضع أولاً، ثم الـ interfaces، ويكون new() في النهاية دائماً)[cite: 6].
+             * (الـ class أو struct يوضع أولاً، ثم الـ interfaces، ويكون new() في النهاية دائماً).
              */
             //public class CustomManager<T> where T : class, IComparable<T>, new()
             //    {
@@ -180,14 +180,14 @@
             #region Q13: What does the 'default' keyword do in generics?
             /*
              * 'default' Keyword: تقوم بإعادة القيمة الافتراضية للنوع؛ 
-             * فترجع null إذا كان النوع Reference Type، وترجع 0 أو false إذا كان Value Type[cite: 6].
+             * فترجع null إذا كان النوع Reference Type، وترجع 0 أو false إذا كان Value Type.
              */
             #endregion
 
             #region Q15: What is covariance? Explain the 'out' keyword.
             /*
              * Covariance: تسمح باستبدال النوع المتوقع بنوع أثر تخصيصاً (Derived Type)،
-             * وتستخدم الكلمة المفتاحية 'out' لتحديد أن معمل النوع يمرر كمُخرج (Return Type) فقط[cite: 6].
+             * وتستخدم الكلمة المفتاحية 'out' لتحديد أن معمل النوع يمرر كمُخرج (Return Type) فقط.
              */
             //public interface ICovariant<out T>
             //    {
@@ -198,7 +198,7 @@
             #region Q16: What is contravariance? Explain the 'in' keyword.
             /*
              * Contravariance: تسمح باستبدال النوع المتوقع بنوع أكثر عمومية (Base Type)،
-             * وتستخدم الكلمة المفتاحية 'in' لتحديد أن معامل النوع يمرر كمُدخل (Parameter) فقط[cite: 6].
+             * وتستخدم الكلمة المفتاحية 'in' لتحديد أن معامل النوع يمرر كمُدخل (Parameter) فقط.
              */
             //public interface IContravariant<in T>
             //    {
@@ -209,8 +209,8 @@
             #region Q17: What is the difference between covariance and contravariance?
             /*
              * Difference:
-             * 1. Covariance (out): تعود بالبيانات (Output) وتتيح إسناد Derived إلى Base[cite: 6].
-             * 2. Contravariance (in): تستقبل البيانات (Input) وتتيح إسناد Base إلى Derived[cite: 6].
+             * 1. Covariance (out): تعود بالبيانات (Output) وتتيح إسناد Derived إلى Base.
+             * 2. Contravariance (in): تستقبل البيانات (Input) وتتيح إسناد Base إلى Derived.
              */
             #endregion
 
@@ -218,7 +218,7 @@
             /*
              * Static members in generic types:
              * يتم إنشاء نسخة مستقلة من الأعضاء الـ static لكل closed type مختلف؛
-             * فمثلاً GenericClass<int> يمتلك نسخة static مختلفة تماماً عن GenericClass<string>[cite: 6].
+             * فمثلاً GenericClass<int> يمتلك نسخة static مختلفة تماماً عن GenericClass<string>.
              */
             #endregion
 
