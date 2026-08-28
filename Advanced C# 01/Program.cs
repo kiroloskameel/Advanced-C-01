@@ -229,6 +229,59 @@
              * 2. أن يحدد الكلاس الابن نوعاً معيناً للكلاس الأب: class Child : Parent<int>
              */
             #endregion
+
+            #region Q20: Complete Exercise - Create a generic Cache<TKey, TValue> with Add, Get, Remove, Contains, and expiration support.
+    //public class CacheItem<TValue>
+    //    {
+    //        public TValue Value { get; set; }
+    //        public DateTime ExpirationTime { get; set; }
+    //    }
+
+    //    public class Cache<TKey, TValue>
+    //    {
+    //        private readonly Dictionary<TKey, CacheItem<TValue>> _cache = new Dictionary<TKey, CacheItem<TValue>>();
+
+    //        public void Add(TKey key, TValue value, TimeSpan duration)
+    //        {
+    //            _cache[key] = new CacheItem<TValue>
+    //            {
+    //                Value = value,
+    //                ExpirationTime = DateTime.Now.Add(duration)
+    //            };
+    //        }
+
+    //        public TValue Get(TKey key)
+    //        {
+    //            if (_cache.TryGetValue(key, out var item))
+    //            {
+    //                if (DateTime.Now <= item.ExpirationTime)
+    //                {
+    //                    return item.Value;
+    //                }
+    //                _cache.Remove(key); 
+    //            }
+    //            return default;
+    //        }
+
+    //        public void Remove(TKey key)
+    //        {
+    //            _cache.Remove(key);
+    //        }
+
+    //        public bool Contains(TKey key)
+    //        {
+    //            if (_cache.TryGetValue(key, out var item))
+    //            {
+    //                if (DateTime.Now <= item.ExpirationTime)
+    //                {
+    //                    return true;
+    //                }
+    //                _cache.Remove(key);
+    //            }
+    //            return false;
+    //        }
+    //    }
+         #endregion
     }
 }
 }
