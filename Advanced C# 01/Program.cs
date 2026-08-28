@@ -33,6 +33,23 @@
             //}
             #endregion
 
+            #region Q3: What are multiple type parameters? Write Pair<TKey, TValue>.
+            /*
+             * Multiple Type Parameters: تعني قدرة الكلاس أو الواجهة أو الدالة على استقبال أكثر من 
+             * نوع بيانات واحد في نفس الوقت (مثل T1, T2) ليتم استخدامهم داخلياً[cite: 5].
+             */
+            // public class Pair<TKey, TValue>
+            //  {
+            //public TKey Key { get; set; }
+            //public TValue Value { get; set; }
+
+            //public Pair(TKey key, TValue value)
+            //{
+            //    Key = key;
+            //    Value = value;
+            //}
+            // }
+            #endregion
     }
 }
 }
