@@ -147,6 +147,21 @@
             //    }
             #endregion
 
+            #region Q11: What is the base class constraint? Write an example.
+            /*
+             * Base class constraint: قيد يشترط أن يكون النوع الممرر إما الكلاس الأساسي نفسه أو يرث منه[cite: 6].
+             */
+            //public class Entity { public int Id { get; set; } }
+
+            //    public class EntityManager<T> where T : Entity
+            //    {
+            //        public void PrintId(T entity)
+            //        {
+            //            Console.WriteLine(entity.Id);
+            //        }
+            //    }
+            #endregion
+
 
     }
 }
