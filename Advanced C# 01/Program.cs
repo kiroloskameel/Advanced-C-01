@@ -110,7 +110,17 @@
             //    }
             #endregion
 
+            #region Q8: What is the 'class' constraint? Write an example.
+            /*
+             * 'class' constraint: قيد يفرض أن يكون نوع البيانات الممرر Reference Type فقط (مثل class, interface, delegate, string)[cite: 6].
+             */
+            //public class ReferenceContainer<T> where T : class
+            //    {
+            //        public T Item { get; set; }
+            //    }
+            #endregion
 
+            
     }
 }
 }
