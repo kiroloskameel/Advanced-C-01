@@ -133,6 +133,21 @@
             //        }
             //    }
             #endregion
+
+            #region Q10: What is the interface constraint? Write an example.
+            /*
+             * Interface constraint: قيد يشترط أن يكون النوع الممرر يطبق (Implements) واجهة برمجية محددة[cite: 6].
+             */
+            //public class Processor<T> where T : IDisposable
+            //    {
+            //        public void Process(T item)
+            //        {
+            //            item.Dispose();
+            //        }
+            //    }
+            #endregion
+
+
     }
 }
 }
