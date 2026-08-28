@@ -162,7 +162,20 @@
             //    }
             #endregion
 
-
+            #region Q12: How do you apply multiple constraints? Write an example.
+            /*
+             * Multiple Constraints: يتم تطبيق أكثر من قيد بيفصل بينهم بفاصلة (,) مع مراعاة الترتيب
+             * (الـ class أو struct يوضع أولاً، ثم الـ interfaces، ويكون new() في النهاية دائماً)[cite: 6].
+             */
+            //public class CustomManager<T> where T : class, IComparable<T>, new()
+            //    {
+            //        public T CreateAndCompare(T other)
+            //        {
+            //            T newItem = new T();
+            //            return newItem.CompareTo(other) > 0 ? newItem : other;
+            //        }
+            //    }
+            #endregion
     }
 }
 }
