@@ -88,7 +88,17 @@
 
             #endregion
 
-
+            #region Q6: What is a generic interface? Write IRepository<T>.
+            /*
+             * Generic Interface: واجهة برمجية تحدد مجموعة من الدوال والمعاملات بدون تحديد نوع البيانات،
+             * ليتم تحديده لاحقاً عند الـ Implementation بواسطة الكلاس المستقبل[cite: 6].
+             */
+            //public interface IRepository<T>
+            //    {
+            //        void Add(T item);
+            //        T Get(int id);
+            //    }
+            #endregion
     }
 }
 }
