@@ -183,6 +183,17 @@
              * فترجع null إذا كان النوع Reference Type، وترجع 0 أو false إذا كان Value Type[cite: 6].
              */
             #endregion
-        }
+
+            #region Q15: What is covariance? Explain the 'out' keyword.
+            /*
+             * Covariance: تسمح باستبدال النوع المتوقع بنوع أثر تخصيصاً (Derived Type)،
+             * وتستخدم الكلمة المفتاحية 'out' لتحديد أن معمل النوع يمرر كمُخرج (Return Type) فقط[cite: 6].
+             */
+            //public interface ICovariant<out T>
+            //    {
+            //        T GetItem();
+            //    }
+            #endregion
     }
+}
 }
