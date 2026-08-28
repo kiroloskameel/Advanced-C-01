@@ -205,6 +205,30 @@
             //        void SetItem(T item);
             //    }
             #endregion
+
+            #region Q17: What is the difference between covariance and contravariance?
+            /*
+             * Difference:
+             * 1. Covariance (out): تعود بالبيانات (Output) وتتيح إسناد Derived إلى Base[cite: 6].
+             * 2. Contravariance (in): تستقبل البيانات (Input) وتتيح إسناد Base إلى Derived[cite: 6].
+             */
+            #endregion
+
+            #region Q18: How do static members work in generic types?
+            /*
+             * Static members in generic types:
+             * يتم إنشاء نسخة مستقلة من الأعضاء الـ static لكل closed type مختلف؛
+             * فمثلاً GenericClass<int> يمتلك نسخة static مختلفة تماماً عن GenericClass<string>[cite: 6].
+             */
+            #endregion
+
+            #region Q19: How can you inherit from a generic class?
+            /*
+             * طرق الوراثة من Generic Class:
+             * 1. أن يظل الكلاس الابن Generic أيضاً: class Child<T> : Parent<T>
+             * 2. أن يحدد الكلاس الابن نوعاً معيناً للكلاس الأب: class Child : Parent<int>
+             */
+            #endregion
     }
 }
 }
