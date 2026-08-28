@@ -99,6 +99,18 @@
             //        T Get(int id);
             //    }
             #endregion
+
+            #region Q7: What is the 'struct' constraint? Write an example.
+            /*
+             * 'struct' constraint: قيد يفرض أن يكون نوع البيانات الممرر Value Type فقط (مثل int, double, struct)[cite: 6].
+             */
+            //public class StructContainer<T> where T : struct
+            //    {
+            //        public T Value { get; set; }
+            //    }
+            #endregion
+
+
     }
 }
 }
