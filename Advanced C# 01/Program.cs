@@ -50,6 +50,22 @@
             //}
             // }
             #endregion
+
+            #region Q4: What is a generic method? Write Swap<T> method.
+            /*
+             * Generic Method: هي دالة تستقبل نوع بيانات (Type Parameter) خاص بها، 
+             * وتعمل عليه بغض النظر عما إذا كان الكلاس الذي يحتويها Generic أم لا[cite: 5].
+             */
+            //public class Utility
+            //    {
+            //        public static void Swap<T>(ref T a, ref T b)
+            //        {
+            //            T temp = a;
+            //            a = b;
+            //            b = temp;
+            //        }
+            //    }
+            #endregion
     }
 }
 }
