@@ -16,7 +16,23 @@
              */
             #endregion
 
+            #region Q2: Write a generic class Container<T> with Add and Get methods.
+            //public class Container<T>
+            //{
+            //private T _item;
 
-        }
+            //public void Add(T item)
+            //{
+            //    _item = item;
+            //}
+
+            //public T Get()
+            //{
+            //    return _item;
+            //}
+            //}
+            #endregion
+
     }
+}
 }
