@@ -176,6 +176,13 @@
             //        }
             //    }
             #endregion
+
+            #region Q13: What does the 'default' keyword do in generics?
+            /*
+             * 'default' Keyword: تقوم بإعادة القيمة الافتراضية للنوع؛ 
+             * فترجع null إذا كان النوع Reference Type، وترجع 0 أو false إذا كان Value Type[cite: 6].
+             */
+            #endregion
+        }
     }
-}
 }
