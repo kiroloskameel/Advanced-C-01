@@ -66,6 +66,29 @@
             //        }
             //    }
             #endregion
+
+            #region Q5: Write a generic method FindMax<T> that finds maximum value
+
+            //public class MathUtility
+            //        {
+            //            // where T : IComparable<T>  ->  شرط عشان نسمح بالمقارنة
+            //            public static T FindMax<T>(T a, T b) where T : IComparable<T>
+            //            {
+            //                // CompareTo بترجع رقم موجب لو كانت a أكبر من b
+            //                if (a.CompareTo(b) > 0)
+            //                {
+            //                    return a;
+            //                }
+            //                else
+            //                {
+            //                    return b;
+            //                }
+            //            }
+            //}
+
+            #endregion
+
+
     }
 }
 }
