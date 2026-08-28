@@ -120,7 +120,19 @@
             //    }
             #endregion
 
-            
+            #region Q9: What is the 'new()' constraint? Write an example.
+            /*
+             * 'new()' constraint: قيد يفرض أن يحتوي النوع الممرر على Parameterless Constructor،
+             * مما يسمح بإنشاء نسخة جديدة من النوع داخل الكلاس باستخدام new T()[cite: 6].
+             */
+            //public class Creator<T> where T : new()
+            //    {
+            //        public T CreateInstance()
+            //        {
+            //            return new T();
+            //        }
+            //    }
+            #endregion
     }
 }
 }
