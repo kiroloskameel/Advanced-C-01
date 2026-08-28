@@ -194,6 +194,17 @@
             //        T GetItem();
             //    }
             #endregion
+
+            #region Q16: What is contravariance? Explain the 'in' keyword.
+            /*
+             * Contravariance: تسمح باستبدال النوع المتوقع بنوع أكثر عمومية (Base Type)،
+             * وتستخدم الكلمة المفتاحية 'in' لتحديد أن معامل النوع يمرر كمُدخل (Parameter) فقط[cite: 6].
+             */
+            //public interface IContravariant<in T>
+            //    {
+            //        void SetItem(T item);
+            //    }
+            #endregion
     }
 }
 }
